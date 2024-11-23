@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Cart */
+.cart {
+    position: relative;
+    background-color: #ffffff;
+    color: #212529;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cartAmount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* Shop Section */
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 50px;
+}
+.item {
+    border: 2px solid #343a40;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.details {
+    padding: 15px;
+    text-align: center;
+}
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+.bi-dash-lg {
+    color: red;
+}
+.bi-plus-lg {
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 30px;
+    }
+    .hero {
+        padding: 30px 10px;
+    }
+    .shop {
+        padding: 10px;
+    }
+}
+/**
+* ! style rules for lable and some buttons
+**/
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.HomeBtn, .checkout, .removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.checkout {
+    background-color: green;
+}
+.removeAll {
+    background-color: red;
+}
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+/**
+* ! style rules for lable and some buttons
+**/
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.HomeBtn, .checkout, .removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.checkout {
+    background-color: green;
+}
+.removeAll {
+    background-color: red;
+}
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+/**
+* ! Style rules for shopping-cart
+**/
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+/**
+* ! Style rules for cart-item
+**/
+.cart-item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+.title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
